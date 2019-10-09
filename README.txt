@@ -198,5 +198,17 @@ git remote -v
 git remote add origin git@github.com:sumit-kumar-singh/GitFundamentals
 git push
 
+# Creating Branch :
+Step 1 - for creating a new branch run command
+git branch branch_name
+git branch
 
-to be continued..
+Step 2 - for switching to newly created branch
+git checkout branch_name
+
+Step 3 - to check new branches and commit done on these run
+git log --oneline --graph --all --decorate
+
+You can also create alias for this command using global config alias.<alias_name>
+git config --global alias.lga "log --oneline --graph --all --decorate"
+

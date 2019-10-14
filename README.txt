@@ -212,3 +212,9 @@ git log --oneline --graph --all --decorate
 You can also create alias for this command using global config alias.<alias_name>
 git config --global alias.lga "log --oneline --graph --all --decorate"
 
+# Adding SSH key for passwordless operations
+ssh-keygen -t rsa -b 4096 -C "gitemail@gmail.com"
+
+Hit enter and then add passpharse and save it to default location ex. /home/sumitkumar/.ssh/id_rsa.pub
+Go to terminal and cd ~/.ssh, -> ls -> gedit id_rsa.pub, copy the entire key. Open settings in github account -> ssh and gpk keys -> Add ssh key -> provide key name and copied key value and add ssh key.
+Now check it in terminal by running git -T git@github.com , you will get this message "Hi github-user-name! You've successfully authenticated, but GitHub does not provide shell access."

@@ -177,8 +177,8 @@ Your code has been uploaded to github. Now made some changes in one the file and
 * git log
 * git log origin/master
 
-You will find that the changes you made are not reflecting in github but its showing in git log locally. So we have to push the code using command
-* git push origin master
+You will find that the changes you made are not reflecting in github but its showing in git log locally. So we have to push the code using command. While pushing your code, use -u only for first time to link origin with master.
+* git push -u origin master
 * git log
 * git log origin/master
 
@@ -198,6 +198,7 @@ Step 3 – for pushing to a remote we have to run git commit -am “Updated” a
 * git remote add origin git@github.com:sumit-kumar-singh/GitFundamentals
 * git push
 
+Main difference between fetch and pull is, fetch only fetch the updates made in repo but not merge it where as git pull take the latest code from repo and also merge it (git pull = git fetch + git merge).
 ### Creating Branch :
 Step 1 - for creating a new branch run command
 * git branch branch_name

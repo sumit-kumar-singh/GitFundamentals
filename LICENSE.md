@@ -1,5 +1,4 @@
-## MIT License
-
+## XYZ CORPORATION
 ### Copyright (c) 2019 Sumit Kumar
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
